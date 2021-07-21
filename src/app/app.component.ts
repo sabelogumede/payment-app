@@ -11,6 +11,7 @@ export class AppComponent {
   date: string;
   amount: number;
   height: number;
+  miles: number;
 
   // car = {
   //   make: 'Toyota',
@@ -19,6 +20,10 @@ export class AppComponent {
   // };
 
   // methods
+
+  onMilesChange(value:string){
+    this.miles= parseFloat(value)
+  }
   
   onHeightChange(value: string){
     this.height = parseFloat(value);
